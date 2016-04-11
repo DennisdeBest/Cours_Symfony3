@@ -1,0 +1,14 @@
+{% extends 'AppBundle::base.html.twig' %}
+{% block body %}
+    <div>
+        Welcome to my Symfony thingy
+    </div>
+
+<div>
+    <ul>
+    {% for product in products %}
+        <li>{{ product.name }}</li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock %}
